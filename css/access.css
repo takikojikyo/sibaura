@@ -1,0 +1,153 @@
+.access-title{
+  background-image: url("../img/download/accesstop.jpg");
+  background-position: 50% 61%;
+}
+.access-topimg{
+object-position: 0% 50%;
+}
+.access-heading{
+  margin-bottom: 80px;
+}
+.access-station{
+  margin-top: 40px;
+  line-height: 1;
+}
+.ac-1{
+  font-size: 48px;
+  font-weight: bold;
+  color: #A7190C;
+}
+.access-item{
+  padding-bottom: 80px;
+}
+.access-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+.access-list li{
+  background: #524847;
+  text-align: center;
+  position: relative;
+    /* height: 140px; */
+    padding: 40px 10px 0px;
+  }
+
+.access-list li p{
+  color: white;
+}
+.station{
+  font-size: 24px;
+  padding: 0 5px 0 0;
+}
+.num-access{
+  font-size: 48px;
+  padding: 0 5px;
+}
+.tag-access{
+  color: white;
+  background: #BA750D;
+  font-size: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 7%;
+  left: 13%;
+}
+.access-2,
+.access-3,
+.access-4{
+  margin-bottom: 80px;
+}
+.access-2>img{
+  height: 350px;
+  object-fit: cover;
+  object-position: 50% 42%;
+ 
+  margin-bottom: 20px;
+}
+.access-list2{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.access-list2 li{
+  position: relative;
+  background: #524847;
+  width: 49%;
+  color: white;
+  padding: 10px 10px 0;
+}
+
+@media (max-width:960px){
+  
+
+  .station{
+    font-size: 20px;
+  }
+  .num-access{
+    font-size: 48px;
+    padding: 0 5px;
+  }
+  .tag-access{
+    font-size: 18px;
+    padding: 3px 10px;
+  }
+}
+@media (max-width:768px){
+ 
+
+  .access-2>img{
+    height: 300px;
+  }
+  .access-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .station{
+    font-size: 20px;
+    padding: 0 3px 0 0;
+  }
+  
+  .tag-access{
+    font-size: 20px;
+    padding: 3px 5px;
+  }
+  .access-list2{
+    flex-direction: column;
+  }
+  .access-list2 li{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  iframe{
+    height: 350px;
+  }
+}
+@media (max-width:500px){
+
+ 
+  .access-2>img{
+    height: 250px;
+  }
+  .access-station{
+    line-height: 1.5;
+  }
+  .ac-1{
+    font-size: 32px;
+  }
+  
+  .access-4 iframe{
+    height: 350px;
+  }
+  .num-access{
+    font-size: 32px;
+    padding: 0 3px;
+  }
+  .tag-access{
+    font-size: 16px;
+  }
+  .access-list li{
+      height: 140px;
+    }
+}

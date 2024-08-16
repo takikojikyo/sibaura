@@ -1,0 +1,97 @@
+/*ページタイトル*/
+
+.plan-title{ 
+  background-image: url("../img/download/plantop.jpg");
+    background-position: 50% 47%;
+}
+
+.plan-heading{
+  background-color: rgba(82,72,71,0.1);
+  padding: 40px;
+  margin-bottom: 80px;
+}
+.plan-heading p{
+  margin-bottom: 50px;
+}
+.plan-heading .plan-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.plan-heading .plan-btn li{
+  width: 30%;
+  text-align: center;
+}
+.plan-heading .plan-btn a{
+  position: relative;
+  color: white;
+  background-color: #524847;
+  display: block;
+  padding: 20px 0;
+  transition: all 0.5s;
+}
+.plan-btn a:hover .arrow-box{
+  right: 8%;
+}
+.plan-btn a:hover .arrow-box .arrow{
+  width: 25px;
+}
+/*plan-1K*/
+
+
+.plan-list{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+}
+.plan-list li{
+  padding: 10px;
+border: 1px solid #ccc;
+height: 320px;
+position: relative;
+}
+.plan-list img{
+  height: auto;
+  max-height: 260px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.plan-list p{
+  position: absolute;
+  bottom: 2%;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.plan-1ldk,.plan-2ldk,.plan-3ldk{
+  margin-bottom: 120px;
+}
+
+/*レスポンシブ*/
+@media (max-width:960px){
+  .plan-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .plan-list img{
+    max-height: 240px;
+  }
+}
+@media (max-width:768px){
+.plan-heading .plan-btn{
+  flex-direction: column;
+}
+.plan-heading .plan-btn li{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.plan-heading .plan-btn li:last-of-type{
+  margin-bottom: 0px;
+}
+}
+
+@media (max-width:500px){
+.plan-list{
+  grid-template-columns: 1fr;
+}
+
+}
